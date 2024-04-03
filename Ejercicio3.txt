@@ -1,0 +1,43 @@
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+    Es el link con el mensaje.
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+    Es igual que el anterior, pero en este caso, lo abre al vinculo en otro pestaña.
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+    el enlace no es valido, hreflang="es" puede usarse en elementos <a> para indicar el idioma del recurso vinculado, pero el atributo type="text/html" y charset="utf-8" no son válidos para elementos <a> y no tendrían ningún efecto en ese contexto.
+<a href="#">Click aquí para ir a Google</a>
+    Este enlace lleva al usuario a la parte superior de la página actual cuando se hace clic en él. La almohadilla (#) se utiliza para hacer referencia al mismo documento.
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+    Este enlace también lleva al usuario a la parte superior de la página actual cuando se hace clic en él. En este caso, se utiliza #arriba como un marcador de posición que apunta a un elemento con id="arriba", que se define la la segunda linea de codigo.
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+    Se hace click sobre la "click aqui" para la acceder a google
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+    se hace click en la imagen, para ir a google
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+    Este párrafo contiene un enlace que rodea a una imagen, seguido de texto. Sin embargo, hay un salto de línea en medio del atributo alt de la imagen, lo cual es incorrecto y puede generar problemas de visualización o validación.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+    tanto la imagen como el click aqui, redirijen a google. 
+
+
+3.c) La primer columna, es una lista desordenada
+
+-La 2da columna, es una lista ordenada generada de manera "clasica" 
+-La 3er columna, crea 3 listas de un elemento, pero hace que el primer elemento cambio con el atributo value
+-En el 4to caso, se está utilizando un bloque de citas (<blockquote>) junto con un párrafo (<p>) que contiene una lista numerada.
+La lista numerada se crea manualmente dentro del párrafo, usando números y puntos para indicar cada elemento. Esto no es una lista HTML real, sino simplemente texto formateado para simular una lista numerada.
+
+3.d) Las diferencias principales se encuentran en el contenido y la presentación visual de las celdas de encabezado de columna, así como en el uso de etiquetas adicionales para formatear el texto en el primer bloque de código.
+
+3e) 
+
+
+
+
