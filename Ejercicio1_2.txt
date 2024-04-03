@@ -1,0 +1,127 @@
+1. ¿Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+    Es un lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones.
+    Fue desarrollado durante los años 90 por Tim Berners-Lee y fue popularizado por el navegador Mosaic.
+    Las versiones anteriores de html son: HTML 2.0, HTML 3.2, HTML 4.0, HTML 4.01. HTML 5 es la última versión a la fecha, la quinta revisión más importante. 
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+ -1. Un esquema uniforme de nombres para localizar recursos en la Web (p.ej., URIs).
+ -2. Protocolos, para acceder a recursos con nombre en la Web (p.ej., HTTP). 
+ -3. Hipertexto, para navegar fácilmente entre recursos (p.ej., HTML).
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y obsoleto?
+
+    Antes de la llegada de las hojas de estilo, los autores utilizaban las tablas y las imágenes como medio de organizar la presentación de sus páginas. Al ofrecer las hojas de estilo mecanismos de presentación más potentes, el W3C declarará obsoletos en el futuro muchos de los elementos y atributos de presentación del HTML, anteriores. A lo largo de esta especificación dichos elementos y atributos se marcan como "desaprobados".
+
+4. ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+    Un DTD (Document Type Definition) es un conjunto de reglas sintácticas para definir etiquetas. Nos definen etiquetas y elementos que se pueden usar en esta versión.
+    -Nuevas hojas de estilo para el documento basadas en los estilos de los informes técnicos del W3C.
+    -Se añadió una tabla de contenidos abreviada.
+    -Se actualizó el copyright.
+    -Se eliminaron partes de código que hacían que algunos navegadores se colgaran.
+    -Se añadió a Shane McCarron a la sección de agradecimientos.
+    -En la sección 1.4 se eliminaron los detalles del copyright para hacer referencia al sitio del W3C en su lugar.
+    -Las referencias al conjunto de caracteres del documento son todas a la ISO 10646 (y una vez a UNICODE para señalar su equivalencia). Las referencias a UNICODE se refieren sólo al algoritmo bidireccional.
+    -Los ejemplos usan ahora FPIs con fecha.
+
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+
+    El HTML permite a los autores especificar metadatos -- información sobre un documento más que contenido del propio documento -- de diferentes maneras.
+    En HTML se especifican con la etiqueta “meta” ej:
+    <META name="UTN" content="Facultad tecnologica">
+
+
+Actividad 2.
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+    
+    Respuesta=> La etiqueta <!-- en HTML se utiliza para iniciar un comentario en el código. Se pueden utilizar en cualquier parte del codigo, porque justamente nos da informacion adicional a los programadores. 
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+        
+    Respuesta=> La etiqueta <div> en HTML se utiliza para crear divisiones o contenedores genéricos que permiten organizar y estructurar el contenido de una página web. Normalmente se utiliza dentro del <body> 
+    id: Es un atributo que proporciona un identificador único para el elemento
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+
+    Respuesta=> <img> es una etiqueta que sirve justamente para insertar una imagen 
+    src: Este atributo especifica la URL de la imagen que se debe mostrar. 
+    alt: Este atributo proporciona un texto alternativo que se mostrará si la imagen no se puede cargar correctamente
+    name: Este atributo proporciona un nombre para el elemento.
+    width: Este atributo especifica el ancho de la imagen en píxeles
+    height: Este atributo especifica la altura de la imagen en píxeles. 
+    longdesc: Este atributo proporciona una URL que apunta a una descripción larga o detalles adicionales sobre la imagen.
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    Respuesta=> estas etiquetas <meta />, van en el <head> y sirven para proporcionar ciertos datos, utiles para el motor de busqueda, pero no visibles al usuario. 
+
+    Primera línea:
+
+        name: Este atributo especifica el nombre de la metaetiqueta. 
+        lang: Este atributo especifica el idioma del contenido de la metaetiqueta. En este caso, el valor es "es" que indica español.
+        content: Este atributo proporciona el contenido de la metaetiqueta. En este caso, el valor es "casa, compra, venta, alquiler", que son las palabras clave asociadas al contenido de la página.
+        
+    Segunda línea:
+
+        http-equiv: Este atributo especifica el tipo de encabezado HTTP que se está emulando. En este caso, el valor es "expires", lo que indica que se está especificando una fecha de vencimiento.
+        content: Este atributo proporciona el contenido del encabezado HTTP especificado por http-equiv. En este caso, el valor es "16-Sep-2019 7:49 PM", lo que indica que la página debería considerarse vencida después de esa fecha y hora.
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+
+    Respuesta=> la etiqueta <a/> se utiliza para crear hipervínculos, que permiten a los usuarios navegar de una página a otra o dentro de la misma página
+    
+        href: Este atributo especifica la URL a la que el enlace debe dirigir.
+        type: Este atributo especifica el tipo de contenido MIME del recurso vinculado. En este caso, el valor es "text/html", lo que indica que el recurso es un documento HTML.
+        hreflang: Este atributo especifica el idioma del recurso vinculado. En este caso, el valor es "es", lo que indica españo
+        charset: Este atributo especifica el conjunto de caracteres utilizado por el recurso vinculado. En este caso, el valor es "utf-8", que es un conjunto de caracteres Unicode ampliamente utilizado.
+        rel: Este atributo especifica la relación entre el documento actual y el recurso vinculado. En este caso, el valor es "help", lo que indica que el enlace proporciona ayuda o información de soporte.
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+    Respuesta=> la etiqueta <table> funciona para el disenio de una tabla  
+
+        width: Este atributo especifica el ancho de la tabla en píxeles o como un porcentaje del ancho del contenedor. En este caso, el valor es "200", lo que indica que la tabla tendrá un ancho de 200 píxeles.
+        summary: Este atributo proporciona un resumen o una descripción de la tabla. En este caso, el valor es "Datos correspondientes al ejercicio vencido".
+        
+    <caption>: Esta etiqueta proporciona un título o encabezado para la tabla. En este caso, el texto es "Título".
+    <tr>: Esta etiqueta define una fila en la tabla.
+    <th>: Esta etiqueta define una celda de encabezado en la tabla.
+    <td>: Esta etiqueta define una celda de datos en la tabla.
+    Atributos de elementos internos:
+
+    Para las etiquetas <th>:
+    scope: Este atributo especifica el alcance de la información en la celda de encabezado. En este caso, el valor es "col", lo que indica que la celda de encabezado se refiere a una columna.
+    Para las etiquetas <th> en las filas de datos:
+    scope: Este atributo especifica el alcance de la información en la celda de encabezado. En este caso, el valor es "row", lo que indica que la celda de encabezado se refiere a una fila.
+
+
