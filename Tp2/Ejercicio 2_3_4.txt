@@ -1,0 +1,87 @@
+Ejercicio 2
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+p#normal {
+font-family: arial,helvetica;
+font-size: 11px;
+font-weight: bold;
+}
+    al parrafo con la id "normal" le modifica: 
+        -la fuente, siendo la primera opc. arial y la segunda helvetica
+        - el tamaño de la letra en 11px
+        - y el tipo de letra en "negrita" 
+
+*#destacado {
+border-style: solid;
+border-color: blue;
+border-width: 2px;
+}
+    El asterisco (*) en CSS se utiliza como selector universal, lo que significa que selecciona todos los elementos en el documento HTML.
+    Entonces, *#destacado selecciona cualquier elemento en el documento HTML que tenga el ID "destacado"
+
+    -modificaria los bordes de la tabla para que sean solidos y azules y de 2px 
+
+    
+#distinto {
+background-color: #9EC7EB;
+color: red;
+}
+    al parrafo con id distinto, se le aplica en el fondo el color #9EC7EB, y al texto como tal el color rojo. 
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>
+<p id="distinto">Este es el último párrafo</p>
+
+====================================================================
+
+Ejercicio 3-> Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+p.quitar {
+color: red;
+}
+    -a todos los parrafos con la clase "quitar" le da color rojo. Por eso al h1 con clase quitar no le da color rojo. 
+
+*.desarrollo {
+font-size: 8px;
+} 
+    -le da tamanio a la fuente de 8px
+
+.importante {
+font-size: 20px;
+}
+    -le da tamanio a la fuente de 8px
+
+<p class="desarrollo">
+En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar">
+Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p >
+En este otro párrafo trataremos otro tema:<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante">
+Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+Ejercicio 4
+
+En cuestiones del link, funcionan ambos iguales. Utilizan las pseudoclases para ir modificando el estilo del link, dependiendo si pasamos el cursor por arriba, si ya clickeamos el link.. 
+
+En cuanto a la regla aplicada a los parrafos, el html de la izquierda tendra "font-weight: normal;" debido a que tiene mayor jerarquia la etiqueta interna, que la externa declarada en la hoja de estilos. 
+
+El html de la derecha, tendra font-weight: bold correspondiente a la declaracion del css. 
+
+en cuanto al tamaño de la letra, ambos tendran 14px, por ser la declaracion del la clase "contenido" posterior a la del parrafo. 
+
+
+
+
+
